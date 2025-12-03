@@ -37,5 +37,6 @@ local function solve(puzzle, batteriesCount)
     print("Solution" .. puzzle .. ": " .. totalJolts)
 end
 
-solve(1, 2)
-solve(2, 12)
+local timer = require("timer")
+timer.time(function() solve(1, 2) end, "part 1")
+timer.time(function() solve(2, 12) end, "part 2")

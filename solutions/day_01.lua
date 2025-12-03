@@ -54,5 +54,6 @@ local function part2()
     print("Solution 2: " .. totalWraps)
 end
 
-part1()
-part2()
+local timer = require("timer")
+timer.time(part1, "part 1")
+timer.time(part2, "part 2")
